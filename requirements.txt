@@ -1,0 +1,13 @@
+# 人脸识别考勤系统依赖
+# 检测：Ultralytics YOLO（需要 torch）；识别：InsightFace ArcFace（onnxruntime 推理）
+
+torch>=2.0.0
+torchvision>=0.15.0
+ultralytics>=8.3.0
+insightface>=0.7.3
+onnxruntime>=1.16.0        # 若用 GPU，请改装 onnxruntime-gpu
+opencv-python>=4.8.0
+numpy>=1.24.0
+
+# 可选：用于在图片上绘制中文标签（缺少中文字体时可省略）
+pillow>=9.0.0
